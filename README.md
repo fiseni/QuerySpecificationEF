@@ -9,4 +9,8 @@
 
 # PozitronDev QuerySpecification EF
 
+Nuget package for building query specifications in your domain model. They are evaluated and utilized to create EF queries.
 
+This is EF implementation package of the base abstract package [PozitronDev.QuerySpecification](https://github.com/fiseni/QuerySpecification). It contains EF evaluators and generic repository ready to be consumed in your projects.
+
+Note: The package uses the base premises of the following github project [Ardalis.Specification](https://github.com/fiseni/QuerySpecificationEF). Due to the many breaking changes introduced here, and different infrastructure and usage, I decided to maintain it as a separate package for now. Feel free to check both packages and use them as you desire.
