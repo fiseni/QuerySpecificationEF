@@ -19,7 +19,7 @@ Note: The package uses the base premises of the following github project [Ardali
 
 Specification pattern in general is a way of combining and encapsulating set of business rules. Once you create them, you can test if domain objects satisfy these defined rules or not. Historically, the initiative had nothing to do with DB related queries or anything with persistence, but more with customizable business logic, which (in theory) would be easily maintainable.
 
-I personally, throughout the years have always avoided this pattern, and considered to be an unnecessary abstraction, which does more harm than good. The composite specification classes where just a glorified If statements. Check out this example on this [Wikipedia link](https://en.wikipedia.org/wiki/Specification_pattern). It can't be more ugly than that!
+I personally, throughout the years have always avoided this pattern, and considered to be an unnecessary abstraction, which does more harm than good. The composite specification classes were just a glorified If statements. Check out this example on this [Wikipedia link](https://en.wikipedia.org/wiki/Specification_pattern). It can't be more ugly than that!
 
 ### What changed
 
@@ -59,18 +59,18 @@ public class MyCompanySpec : Specification<Company>
 {
     public MyCompanySpec(int id)
     {
-		// It's possible to chain everything, or write them separately. 
-		// It's based on your preference
-		Query.Where(x => x.Id == id)
-			 .Paginate(10, 20)
-			 .OrderBy(x => x.Name)
-				.ThenByDescending(x => x.SomeOtherCompanyInfo);
+	// It's possible to chain everything, or write them separately. 
+	// It's based on your preference
+	Query.Where(x => x.Id == id)
+		 .Paginate(10, 20)
+		 .OrderBy(x => x.Name)
+			.ThenByDescending(x => x.SomeOtherCompanyInfo);
 
-		Query.Where(x => x.Name == "MyCompany")
-			 .Include(x => x.Stores)
-				.ThenInclude(x => x.Addresses)
+	Query.Where(x => x.Name == "MyCompany")
+		 .Include(x => x.Stores)
+			.ThenInclude(x => x.Addresses)
 
-		Query.Include(x => x.Country)
+	Query.Include(x => x.Country)
     }
 }
 ```
@@ -84,7 +84,7 @@ public class MyRepository<T> : Repository<T>
 {
 	private readonly MyDbContext myDbContext;
 
-	public RepositoryEF(MyDbContext myDbContext)
+	public MyRepository(MyDbContext myDbContext)
 		: base(myDbContext)
 	{
 		this.myDbContext = myDbContext;
@@ -122,3 +122,7 @@ public class CompanyService : ICompanyService
 ```
 
 And that's it, you got your data. I do believe it can't be any simpler.
+
+
+## Give a Star! :star:
+If you like or are using this project please give it a star. Thanks!
