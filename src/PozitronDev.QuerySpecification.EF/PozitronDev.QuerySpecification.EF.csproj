@@ -7,8 +7,8 @@
     <Company>Pozitron Group LLC</Company>
     <Product>Pozitron Query Specification (EF plugin)</Product>
     <Title>PozitronDev.QuerySpecification.EF</Title>
-    <Description>Abstract package for building query specifications in your domain model.</Description>
-    <Summary>Abstract package for building query specifications in your domain model.</Summary>
+    <Description>EF plugin to PozitronDev.QuerySpecification containing EF evaluator and abstract repository.</Description>
+    <Summary>EF plugin to PozitronDev.QuerySpecification containing EF evaluator and abstract repository.</Summary>
     <Copyright>Copyright © 2020 Pozitron Group LLC</Copyright>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageReleaseNotes>Initial Release.</PackageReleaseNotes>
