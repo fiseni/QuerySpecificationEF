@@ -6,14 +6,15 @@
 
 &nbsp; [![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/pozitrondev/PozitronDev.QuerySpecification.EF/8.svg)](https://dev.azure.com/pozitrondev/PozitronDev.QuerySpecification.EF/_build/latest?definitionId=8&branchName=master)
 
+&nbsp;
+
+<strong>Note:</strong> This package soon will be merged into the following GitHub project [Ardalis.Specification](https://github.com/fiseni/QuerySpecificationEF)
 
 # PozitronDev QuerySpecification EF
 
 Nuget package for building query specifications in your domain model. They are evaluated and utilized to create EF queries.
 
 This is EF plugin package to the base abstract package [PozitronDev.QuerySpecification](https://github.com/fiseni/QuerySpecification). It contains EF evaluators and generic repository ready to be consumed in your projects.
-
-Note: The package uses the base premises of the following github project [Ardalis.Specification](https://github.com/fiseni/QuerySpecificationEF). Due to the many breaking changes introduced here, and different infrastructure and usage, I decided to maintain it as a separate package for now. Feel free to check both packages and use them as you desire.
 
 ## What is specification pattern
 
