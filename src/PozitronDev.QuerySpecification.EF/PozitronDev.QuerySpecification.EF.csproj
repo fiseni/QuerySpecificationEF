@@ -18,16 +18,18 @@
     <PackageTags>pozitron specification efcore repository cleanarchitecture</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Version>1.0.0</Version>
-    <DocumentationFile>bin\$(Configuration)\PozitronDev.QuerySpecification.EF.xml</DocumentationFile>
+    <!--<DocumentationFile>bin\$(Configuration)\PozitronDev.QuerySpecification.EF.xml</DocumentationFile>-->
     <RepositoryUrl>https://github.com/fiseni/QuerySpecificationEF</RepositoryUrl>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
-    <PackageReference Include="PozitronDev.QuerySpecification" Version="1.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.6" />
+    <PackageReference Include="PozitronDev.QuerySpecification" Version="1.0.2" />
   </ItemGroup>
   
   <ItemGroup>
