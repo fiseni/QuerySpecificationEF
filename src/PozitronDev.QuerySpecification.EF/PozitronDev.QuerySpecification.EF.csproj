@@ -11,13 +11,13 @@
     <Summary>EF plugin to PozitronDev.QuerySpecification containing EF evaluator and abstract repository.</Summary>
     <Copyright>Copyright © 2020 Pozitron Group LLC</Copyright>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageReleaseNotes>IRepositoryBase removed from the plugin package, added in the base abstract package.</PackageReleaseNotes>
+    <PackageReleaseNotes>Search feature added.</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/fiseni/QuerySpecificationEF</PackageProjectUrl>
     <PackageIconUrl>https://pozitrongroup.com/PozitronLogo.png</PackageIconUrl>
     <PackageIcon>pozitronicon.png</PackageIcon>
     <PackageTags>pozitron specification efcore repository cleanarchitecture</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <!--<DocumentationFile>bin\$(Configuration)\PozitronDev.QuerySpecification.EF.xml</DocumentationFile>-->
     <RepositoryUrl>https://github.com/fiseni/QuerySpecificationEF</RepositoryUrl>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
